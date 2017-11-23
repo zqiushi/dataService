@@ -1,4 +1,4 @@
 FROM tomcat:latest
 RUN rm -rf /usr/local/tomcat/webapps/*
 RUN mkdir /usr/local/tomcat/webapps/dataService -p
-COPY dataService /usr/local/tomcat/webapps/dataService
+COPY ./* /usr/local/tomcat/webapps/dataService/
